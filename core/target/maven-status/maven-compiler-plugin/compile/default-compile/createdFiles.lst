@@ -1,0 +1,11 @@
+com\myproject\aem\core\listeners\SimpleResourceListener.class
+com\myproject\aem\core\models\package-info.class
+com\myproject\aem\core\schedulers\SimpleScheduledTask$Config.class
+com\myproject\aem\core\filters\package-info.class
+com\myproject\aem\core\servlets\SimpleServlet.class
+com\myproject\aem\core\filters\LoggingFilter.class
+com\myproject\aem\core\servlets\package-info.class
+com\myproject\aem\core\schedulers\SimpleScheduledTask.class
+com\myproject\aem\core\listeners\package-info.class
+com\myproject\aem\core\models\HelloWorldModel.class
+com\myproject\aem\core\schedulers\package-info.class
