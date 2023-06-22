@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2023-06-21T22:48:28.353+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/myproject/settings/wcm/templates/mytemplate"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="myproject/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="myproject/components/container"
+            layout="responsiveGrid">
+            <container_1574125378
+                jcr:created="{Date}2023-06-21T21:21:11.862+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-06-21T21:21:11.862+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/container">
+                <header
+                    jcr:created="{Date}2023-06-21T21:22:14.605+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-06-21T21:45:46.598+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/header"
+                    configPhone="+012 345 67890"
+                    headerName="GrowMark"
+                    location="123 Street, New York, USA"
+                    mail="info@example.com"/>
+                <customnavigation
+                    jcr:created="{Date}2023-06-21T22:00:01.205+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-06-21T22:48:28.348+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="get quote"
+                    sling:resourceType="myproject/components/customNavigation"
+                    configPhone="+012 345 67890"
+                    headerName="GrowMark"
+                    icon="gvv"
+                    link="/content/myproject/us/en/about-us"
+                    location="123 Street, New York, USA"
+                    mail="mailto:(mailId)"/>
+            </container_1574125378>
+            <container
+                jcr:lastModified="{Date}2023-06-21T21:07:27.279+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/container"
+                editable="{Boolean}true"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

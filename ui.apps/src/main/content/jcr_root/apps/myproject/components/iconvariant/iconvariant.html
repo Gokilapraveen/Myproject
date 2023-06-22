@@ -1,0 +1,97 @@
+<sly data-sly-test="${properties.variant == 'icontext'}">
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0 feature-row">
+                <sly data-sly-list.CustomMultifield="${resource.getChildren}">
+                    <sly data-sly-test="${CustomMultifield.name == 'prod'}">
+                        <sly data-sly-list.multifield="${CustomMultifield.getChildren}">
+                            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="feature-item border h-100 p-5">
+                                    <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                                        <img class="img-fluid" src="${multifield.iconPath}" alt="Icon" />
+                                    </div>
+                                    <h5 class="mb-3">${multifield.title}</h5>
+                                    <p class="mb-0">${multifield.description}</p>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+</sly>
+
+	<sly data-sly-test="${properties.variant =='icondesc'}">
+     <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">${properties.title}</p>
+                <h1 class="display-5 mb-5">${properties.mainTopic}</h1>
+            </div>
+            <div class="row g-4">
+			<sly data-sly-list.CustomMultifield="${resource.getChildren}">
+				<sly data-sly-test="${CustomMultifield.name == 'icondescfield'}">
+					<sly data-sly-list.multifield="${CustomMultifield.getChildren}">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="${multifield.icon}" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">${multifield.iconTitle}</h5>
+                                <p class="mb-0">${multifield.icondescription}</p>
+                        </div>
+                        <div class="service-btn rounded-0 rounded-bottom">
+                            <a class="text-primary fw-medium" href="">${multifield.readmore}<i
+                                    class="bi bi-chevron-double-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div></sly>
+				</sly>
+				</sly>
+          </div>
+        </div>
+    </div>
+    <!-- Service End -->
+    </sly>
+<!-- Team Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="fs-5 fw-medium text-primary">${properties.displayName}</p>
+            <h1 class="display-5 mb-5">${properties.topic}</h1>
+        </div>
+        <div class="row g-4">
+
+			<sly data-sly-list.CustomMultifield="${resource.getChildren}">
+                <sly data-sly-test="${CustomMultifield.name == 'team'}">
+                    <sly data-sly-list.multifield="${CustomMultifield.getChildren}">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-item rounded overflow-hidden pb-4">
+                                <img class="img-fluid mb-4" src="${multifield.personphoto}" alt="" />
+                                <h5>${multifield.personName}</h5>
+                                <span class="text-primary">${multifield.designation}</span>
+                               
+							   <ul class="team-social" data-sly-list.socialshare="${multifield.getChildren}">
+							    <sly data-sly-test="${socialshare.name == 'socialShare'}">
+                                    <li data-sly-list.shareDetail="${socialshare.getChildren}">
+                                        <a class="btn btn-square" href="${shareDetail.url}"><i class="${shareDetail.listFrom}"></i></a>
+                                    </li>                                    
+									</sly>
+                                </ul>
+								
+                            </div>
+                        </div>
+                    
+					</sly>
+                </sly>
+            </sly>
+			
+        </div>
+    </div>
+</div>
