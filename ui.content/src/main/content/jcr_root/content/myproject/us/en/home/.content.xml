@@ -1,27 +1,276 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-          jcr:primaryType="cq:Page">
+    jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2018-10-04T09:50:29.650+02:00"
+        cq:lastModified="{Date}2023-06-23T11:32:12.111+05:30"
         cq:lastModifiedBy="admin"
-        cq:template="/conf/myproject/settings/wcm/templates/spa-page-template"
+        cq:template="/conf/myproject/settings/wcm/templates/mytemplate"
         jcr:primaryType="cq:PageContent"
-        jcr:title="My Project Home Page"
+        jcr:title="Home"
         sling:resourceType="myproject/components/page">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/responsivegrid">
-            <responsivegrid
+            sling:resourceType="myproject/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2023-06-21T21:07:30.269+05:30"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid">
-                <text
+                sling:resourceType="myproject/components/container"
+                layout="responsiveGrid">
+                <customcarousel_95666
+                    jcr:created="{Date}2023-06-23T10:56:09.566+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-06-23T11:25:20.986+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="myproject/components/text"
-                    text="&lt;p>Hello World!&lt;/p>"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured"/>
-                </text>
-            </responsivegrid>
+                    sling:resourceType="myproject/components/customCarousel"
+                    variant="bannerModel">
+                    <bannerData jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            bannerTitle="Ready to Grow Your Business"
+                            bgImage="/content/dam/myproject/carousel-1.jpg"
+                            contentalign="start"
+                            explorebtn="/content/myproject/us/en/about-us"
+                            slidealignment="slideInRight"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            bannerTitle="Unlock Your Business Growth"
+                            bgImage="/content/dam/myproject/carousel-2.jpg"
+                            contentalign="end"
+                            explorebtn="/content/myproject/us/en/about-us"
+                            slidealignment="slideInLeft"/>
+                    </bannerData>
+                </customcarousel_95666>
+                <iconvariant_copy
+                    jcr:created="{Date}2023-06-22T23:00:22.837+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-06-22T23:04:10.609+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/iconvariant"
+                    variant="icontext">
+                    <prod jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            description="Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam"
+                            iconPath="/content/dam/myproject/icon/icon-1.png"
+                            title="Award Winning"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            description="Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam"
+                            iconPath="/content/dam/myproject/icon/icon-2.png"
+                            title="Professional Staff"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            description="Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam"
+                            iconPath="/content/dam/myproject/icon/icon-3.png"
+                            title="Fair Prices"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            description="Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam"
+                            iconPath="/content/dam/myproject/icon/icon-4.png"
+                            title="24/7 Support"/>
+                    </prod>
+                </iconvariant_copy>
+                <iconvariant_41093615
+                    jcr:created="{Date}2023-06-22T23:08:33.165+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-06-22T23:24:07.601+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/iconvariant"
+                    mainTopic="Digital Marketing Services that We Offer"
+                    title="Our Services"
+                    variant="icondesc">
+                    <icondescfield jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            icon="/content/dam/myproject/icon/icon-5.png"
+                            icondescription="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet&#xd;&#xa;&#xd;&#xa;"
+                            iconTitle="Digital Marketing"
+                            readmore="Read More"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            icon="/content/dam/myproject/icon/icon-6.png"
+                            icondescription="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet"
+                            iconTitle="Internet Marketing"
+                            readmore="Readmore"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            icon="/content/dam/myproject/icon/icon-7.png"
+                            icondescription="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet&#xd;&#xa;&#xd;&#xa;"
+                            iconTitle="Content Marketing"
+                            readmore="Read More"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            icon="/content/dam/myproject/icon/icon-8.png"
+                            icondescription="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet&#xd;&#xa;&#xd;&#xa;"
+                            iconTitle="Social Marketing"
+                            readmore="Read More"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            icon="/content/dam/myproject/icon/icon-9.png"
+                            icondescription="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet&#xd;&#xa;&#xd;&#xa;"
+                            iconTitle="B2B Marketing"
+                            readmore="Read More"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            icon="/content/dam/myproject/icon/icon-10.png"
+                            icondescription="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet&#xd;&#xa;&#xd;&#xa;"
+                            iconTitle="E-mail Marketing"
+                            readmore="Read more"/>
+                    </icondescfield>
+                </iconvariant_41093615>
+                <customcarousel_11388
+                    jcr:created="{Date}2023-06-23T09:35:40.584+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-06-23T10:27:51.134+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/customCarousel"
+                    mainTopic="We've Done Lot's of Awesome Projects"
+                    title="Our Projects"
+                    variant="projectModel">
+                    <carouselData jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            iconpath="/content/dam/myproject/project-1.jpg"
+                            projectDescription="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem"
+                            projectpage="/content/myproject/us/en/about-us"
+                            projectTitle="Data Analytics &amp; Insights"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            iconpath="/content/dam/myproject/project-2.jpg"
+                            projectDescription="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem"
+                            projectpage="/content/myproject/us/en/about-us"
+                            projectTitle="Marketing Content Strategy"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            iconpath="/content/dam/myproject/project-3.jpg"
+                            projectDescription="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem"
+                            projectpage="/content/myproject/us/en/about-us"
+                            projectTitle="Business Target Market"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            iconpath="/content/dam/myproject/project-4.jpg"
+                            projectDescription="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem"
+                            projectpage="/content/myproject/us/en"
+                            projectTitle="Social Marketing Strategy"/>
+                    </carouselData>
+                </customcarousel_11388>
+                <iconvariant_14630252
+                    jcr:created="{Date}2023-06-22T23:46:32.214+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-06-22T23:58:52.217+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/iconvariant"
+                    displayName="Our Team"
+                    topic="Our Expert People Ready to Help You"
+                    variant="teamDetails">
+                    <team jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            designation="Founder &amp; CEO"
+                            personName="Alex Robin"
+                            personphoto="/content/dam/myproject/team-1.jpg">
+                            <socialShare jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-facebook-f"
+                                    url="#"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-linkedin-in"
+                                    url="#"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-twitter"
+                                    url="#"/>
+                            </socialShare>
+                        </item0>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            designation="Co Founder"
+                            personName="Adam Crew"
+                            personphoto="/content/dam/myproject/team-2.jpg">
+                            <socialShare jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-instagram"
+                                    url="#"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-linkedin-in"
+                                    url="#"/>
+                            </socialShare>
+                        </item1>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            designation="Executive Manager&#xd;&#xa;"
+                            personName="Boris Johnson"
+                            personphoto="/content/dam/myproject/team-3.jpg">
+                            <socialShare jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-twitter"
+                                    url="#"/>
+                            </socialShare>
+                        </item2>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            designation="Digital Marketer&#xd;&#xa;"
+                            personName="Robert Jordan"
+                            personphoto="/content/dam/myproject/team-4.jpg">
+                            <socialShare jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-instagram"
+                                    url="#"/>
+                            </socialShare>
+                        </item3>
+                    </team>
+                </iconvariant_14630252>
+                <customcarousel_copy
+                    jcr:created="{Date}2023-06-23T00:18:18.078+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-06-23T10:36:20.628+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/customCarousel"
+                    testimonialmainTopic="What Clients Say About Our Services!"
+                    testimonialtitle="Testimonial"
+                    variant="testimonialmodel">
+                    <carouselModel jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            clientName="Client Name"
+                            feedback="Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo"
+                            iconpath="/content/dam/myproject/testimonial-1.jpg"
+                            profession="Profession"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            clientName="Client Name"
+                            feedback="Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo"
+                            iconpath="/content/dam/myproject/testimonial-2.jpg"
+                            profession="Profession"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            clientName="Client Name"
+                            feedback="Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo"
+                            iconpath="/content/dam/myproject/testimonial-3.jpg"
+                            profession="Profession"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            clientName="Client Name"
+                            feedback="Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo"
+                            iconpath="/content/dam/myproject/testimonial-4.jpg"
+                            profession="Profession"/>
+                    </carouselModel>
+                </customcarousel_copy>
+            </container>
         </root>
     </jcr:content>
 </jcr:root>

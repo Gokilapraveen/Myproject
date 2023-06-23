@@ -1,0 +1,103 @@
+<sly data-sly-test="${properties.variant == 'projectModel'}">
+    <!-- Project Start -->
+    <div class="container-xxl pt-5">
+        <div class="container">
+            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">${properties.title}</p>
+                <h1 class="display-5 mb-5">${properties.mainTopic}</h1>
+            </div>
+            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <sly data-sly-list.CustomMultifield="${resource.getChildren}">
+                    <sly data-sly-test="${CustomMultifield.name == 'carouselData'}">
+                        <sly data-sly-list.multifield="${CustomMultifield.getChildren}">
+                            <div class="project-item mb-5">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="${multifield.iconpath}" alt="" />
+                                    <div class="project-overlay">
+                                        <a class="btn btn-lg-square btn-light rounded-circle m-1" href="${multifield.iconpath}" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                                        <a class="btn btn-lg-square btn-light rounded-circle m-1" href="${multifield.projectpage}.html"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <a class="d-block h5" href="${multifield.projectTitle}">${multifield.projectTitle}</a>
+                                    <span>${multifield.projectDescription}</span>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+</sly>
+
+<sly data-sly-test="${properties.variant == 'testimonialmodel'}">
+    <!-- Testimonial Start -->
+    <div class="container-xxl pt-5">
+        <div class="container">
+            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">${properties.testimonialtitle}</p>
+                <h1 class="display-5 mb-5">${properties.testimonialmainTopic}</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <sly data-sly-list.CustomMultifield="${resource.getChildren}">
+                    <sly data-sly-test="${CustomMultifield.name == 'carouselModel'}">
+                        <sly data-sly-list.multifield="${CustomMultifield.getChildren}">
+                            <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                                <img class="mb-4" src="${multifield.iconpath}" alt="" />
+                                <p class="mb-4">${multifield.feedback}</p>
+                                <h5>${multifield.clientName}</h5>
+                                <span class="text-primary">${multifield.profession}</span>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+</sly>
+
+<sly data-sly-test="${properties.variant == 'bannerModel'}">
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <sly data-sly-list.CustomMultifield="${resource.getChildren}">
+                <sly data-sly-test="${CustomMultifield.name == 'bannerData'}">
+                    <sly data-sly-list="${CustomMultifield.getChildren}">
+
+			 <div class="carousel-item   ${itemlist.first? 'active':''}">
+                    <img class="w-100" src="${item.bgImage}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-${item.contentalign}">
+                                <div class="col-lg-7 text-${item.contentalign}">
+                                    <p class="fs-4 text-white animated ${item.slidealignment}">Welcome to
+                                        <strong>GrowMark</strong>
+                                    </p>
+                                    <h1 class="display-1 text-white mb-4 animated ${item.slidealignment}">${item.bannerTitle}</h1>
+                                    <a href="${item.explorebtn}.html"
+                                        class="btn btn-primary rounded-pill py-3 px-5 animated ${item.slidealignment}">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            	</sly>
+                </sly>
+            </sly>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+</sly>

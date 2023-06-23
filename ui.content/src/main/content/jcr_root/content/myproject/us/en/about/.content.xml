@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-06-23T11:33:22.143+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/myproject/settings/wcm/templates/mytemplate"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="About"
+        sling:resourceType="myproject/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="myproject/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2023-06-21T21:07:30.269+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/container"
+                layout="responsiveGrid">
+                <iconvariant_14630252
+                    jcr:created="{Date}2023-06-22T23:46:32.214+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-06-22T23:58:52.217+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/iconvariant"
+                    displayName="Our Team"
+                    topic="Our Expert People Ready to Help You"
+                    variant="teamDetails">
+                    <team jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            designation="Founder &amp; CEO"
+                            personName="Alex Robin"
+                            personphoto="/content/dam/myproject/team-1.jpg">
+                            <socialShare jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-facebook-f"
+                                    url="#"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-linkedin-in"
+                                    url="#"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-twitter"
+                                    url="#"/>
+                            </socialShare>
+                        </item0>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            designation="Co Founder"
+                            personName="Adam Crew"
+                            personphoto="/content/dam/myproject/team-2.jpg">
+                            <socialShare jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-instagram"
+                                    url="#"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-linkedin-in"
+                                    url="#"/>
+                            </socialShare>
+                        </item1>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            designation="Executive Manager&#xd;&#xa;"
+                            personName="Boris Johnson"
+                            personphoto="/content/dam/myproject/team-3.jpg">
+                            <socialShare jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-twitter"
+                                    url="#"/>
+                            </socialShare>
+                        </item2>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            designation="Digital Marketer&#xd;&#xa;"
+                            personName="Robert Jordan"
+                            personphoto="/content/dam/myproject/team-4.jpg">
+                            <socialShare jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    listFrom="fab fa-instagram"
+                                    url="#"/>
+                            </socialShare>
+                        </item3>
+                    </team>
+                </iconvariant_14630252>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
