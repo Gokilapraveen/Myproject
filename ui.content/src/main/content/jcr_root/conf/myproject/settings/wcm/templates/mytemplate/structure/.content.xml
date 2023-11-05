@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2023-06-21T22:48:28.353+05:30"
+        cq:lastModified="{Date}2023-11-05T22:51:54.340+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/myproject/settings/wcm/templates/mytemplate"
         jcr:primaryType="cq:PageContent"
@@ -30,20 +30,24 @@
                     headerName="GrowMark"
                     location="123 Street, New York, USA"
                     mail="info@example.com"/>
-                <customnavigation
-                    jcr:created="{Date}2023-06-21T22:00:01.205+05:30"
+                <list
+                    jcr:created="{Date}2023-11-05T22:51:25.946+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2023-06-21T22:48:28.348+05:30"
+                    jcr:lastModified="{Date}2023-11-05T22:51:54.338+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="get quote"
-                    sling:resourceType="myproject/components/customNavigation"
-                    configPhone="+012 345 67890"
-                    headerName="GrowMark"
-                    icon="gvv"
-                    link="/content/myproject/us/en/about-us"
-                    location="123 Street, New York, USA"
-                    mail="mailto:(mailId)"/>
+                    sling:resourceType="myproject/components/list"
+                    childDepth="1"
+                    id="[,]"
+                    link="/content/myproject/us/en"
+                    linkItems="false"
+                    listFrom="children"
+                    parentPage="/content/myproject/us/en"
+                    showDescription="false"
+                    showModificationDate="false"
+                    sortOrder="asc"
+                    tagsMatch="any"/>
             </container_1574125378>
             <container
                 jcr:lastModified="{Date}2023-06-21T21:07:27.279+05:30"
