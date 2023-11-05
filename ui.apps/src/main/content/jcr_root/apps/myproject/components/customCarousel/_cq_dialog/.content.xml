@@ -101,12 +101,6 @@
                                                                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                                                             fieldLabel="title"
                                                                                             name="./projectTitle"/>
-                                                                                        <projectpage
-                                                                                            jcr:primaryType="nt:unstructured"
-                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                                                            fieldLabel="Select the Project article page"
-                                                                                            name="./projectpage"
-                                                                                            rootPath="/content/myproject"/>
                                                                                         <description
                                                                                             jcr:primaryType="nt:unstructured"
                                                                                             sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
